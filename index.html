@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>黑塞的精神王国 · Hermann Hesse 1877–1962</title>
+<meta name="description" content="赫尔曼·黑塞的精神王国——从叛逆少年到诺奖得主，12部经典作品、生命历程、时代背景、东方哲学与诗歌绘画。一个西方灵魂的内在朝圣全记录。">
+
+<!-- OG / Social -->
+<meta property="og:title" content="黑塞的精神王国 · Hermann Hesse">
+<meta property="og:description" content="从叛逆少年到诺奖得主——黑塞的全部经典作品、生命故事与精神世界。">
+<meta property="og:image" content="https://k286c7hg65-hub.github.io/hesse-spirit-realm/images/cover.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://k286c7hg65-hub.github.io/hesse-spirit-realm/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="黑塞的精神王国">
+<meta property="og:locale" content="zh_CN">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="黑塞的精神王国 · Hermann Hesse">
+<meta name="twitter:description" content="从叛逆少年到诺奖得主——黑塞的全部经典作品、生命故事与精神世界。">
+<meta name="twitter:image" content="https://k286c7hg65-hub.github.io/hesse-spirit-realm/images/cover.jpg">
+<link rel="preload" as="image" href="images/cover.webp" fetchpriority="high">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@200;300;400;500;600&family=Noto+Serif+SC:wght@400;600;700;900&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════ RESET & BASE ═══════════════════ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#1a1512;
+  --bg-card:#25201c;
+  --bg-card-hover:#2d2823;
+  --gold:#dbb85e;
+  --gold-dim:#a68a4a;
+  --ink:#f0ede8;
+  --muted:#a09888;
+  --accent:#a04040;
+  --blue-muted:#3a5a7b;
+  --blue-dim:#2e4a6f;
+  --font-display:'Cormorant Garamond',Georgia,serif;
+  --font-body:'Inter','PingFang SC','Microsoft YaHei','Noto Serif SC',system-ui,sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+  --max-w:960px;
+}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--font-body);
+  font-weight:300;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--gold);text-decoration:none;transition:color .3s}
+a:hover{color:#e6c56a}
+
+/* ═══════════════════ TIMELINE NAV ═══════════════════ */
+/* ═══════════════════ SECTION NAV ═══════════════════ */
+.section-nav{
+  position:sticky;top:0;z-index:90;
+  display:flex;align-items:center;justify-content:center;gap:.3rem;
+  background:rgba(26,21,18,.94);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(219,184,94,.12);
+  padding:.55rem 1.5rem;
+  opacity:0;transform:translateY(-100%);
+  transition:all .35s ease;
+}
+.section-nav.visible{opacity:1;transform:translateY(0)}
+.section-nav-inner{
+  display:flex;align-items:center;gap:.15rem;
+}
+.section-nav a,.section-nav .nav-dropdown-btn{
+  display:inline-flex;align-items:center;gap:.35rem;
+  padding:.4rem .9rem;border-radius:6px;
+  font-size:.78rem;font-weight:400;letter-spacing:.03em;
+  color:var(--muted);text-decoration:none;
+  border:none;background:none;cursor:pointer;
+  font-family:var(--font-body);
+  white-space:nowrap;transition:all .25s;
+}
+.section-nav a:hover,.section-nav .nav-dropdown-btn:hover{color:var(--gold);background:rgba(219,184,94,.06)}
+.section-nav a.active{color:var(--gold);background:rgba(219,184,94,.1)}
+.section-nav .nav-sep{
+  width:1px;height:18px;background:rgba(219,184,94,.15);margin:0 .3rem;flex-shrink:0;
+}
+.nav-dropdown{position:relative}
+.nav-dropdown-menu{
+  position:absolute;top:100%;right:0;margin-top:.35rem;
+  background:var(--bg-card);border:1px solid rgba(219,184,94,.12);
+  border-radius:8px;padding:.4rem;min-width:130px;
+  display:none;flex-direction:column;gap:.15rem;
+  box-shadow:0 8px 32px rgba(0,0,0,.5);
+  z-index:100;
+}
+.nav-dropdown.open .nav-dropdown-menu{display:flex}
+.nav-dropdown-menu a{
+  padding:.45rem .8rem;border-radius:5px;
+  font-size:.75rem;color:var(--muted);
+  text-decoration:none;transition:all .2s;
+  white-space:nowrap;
+}
+.nav-dropdown-menu a:hover{color:var(--gold);background:rgba(219,184,94,.06)}
+.nav-diamond{font-size:.55rem;color:var(--gold);opacity:.5;flex-shrink:0}
+
+/* Mobile: nav scroll + dropdown fix */
+@media(max-width:768px){
+  .section-nav-inner{overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none}
+  .section-nav-inner::-webkit-scrollbar{display:none}
+  .section-nav{padding:.5rem .8rem}
+  .nav-dropdown-menu{position:fixed;right:1rem;top:2.8rem;}
+}
+
+/* ═══════════════════ HERO ═══════════════════ */
+.hero{
+  position:relative;height:100vh;min-height:600px;
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+}
+.hero-bg{
+  position:absolute;inset:0;
+  background:url('images/cover.webp') center/cover no-repeat;
+  transform:scale(1.1);filter:brightness(.42) saturate(.75);
+  animation:heroZoom 20s ease-out forwards;
+}
+@keyframes heroZoom{
+  0%{transform:scale(1.15);filter:brightness(.3) saturate(.55)}
+  100%{transform:scale(1.05);filter:brightness(.42) saturate(.75)}
+}
+.hero-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(
+    180deg,transparent 0%,rgba(13,12,10,.3) 40%,
+    rgba(13,12,10,.85) 70%,var(--bg) 100%
+  );
+}
+.hero-content{
+  position:relative;z-index:2;text-align:center;
+  padding:2rem;max-width:800px;
+}
+.hero-kicker{
+  font-family:var(--font-mono);font-size:.75rem;
+  letter-spacing:.3em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:1.5rem;
+  opacity:0;animation:fadeUp 1.2s .3s forwards;
+}
+.hero-title{
+  font-family:var(--font-display);
+  font-size:clamp(2.5rem,8vw,5rem);
+  font-weight:700;letter-spacing:.02em;
+  line-height:1.15;
+  opacity:0;animation:fadeUp 1.2s .6s forwards;
+}
+.hero-title .en{display:block;font-size:.5em;font-weight:300;
+  color:var(--muted);letter-spacing:.1em;margin-top:.3rem}
+.hero-sub{
+  font-family:var(--font-mono);font-size:.7rem;
+  color:var(--muted);letter-spacing:.2em;
+  margin-top:1.5rem;opacity:0;
+  animation:fadeUp 1.2s .9s forwards;
+}
+.hero-arrow{
+  position:absolute;bottom:3rem;left:50%;transform:translateX(-50%);
+  z-index:2;opacity:0;animation:fadeUp 1.2s 1.5s forwards;
+  color:var(--muted);font-size:1.5rem;cursor:pointer;
+  animation:bounce 2s ease-in-out infinite;
+}
+@keyframes bounce{
+  0%,100%{transform:translateX(-50%) translateY(0)}
+  50%{transform:translateX(-50%) translateY(8px)}
+}
+
+/* ═══════════════════ SECTIONS ═══════════════════ */
+.section-intro{
+  padding:6rem 2rem 4rem;max-width:var(--max-w);margin:0 auto;
+  text-align:center;
+}
+.section-intro p{
+  font-size:1.05rem;line-height:1.9;
+  color:var(--muted);max-width:680px;margin:0 auto;
+  opacity:0;animation:fadeUp 1s .5s forwards;
+}
+
+.works-grid{
+  max-width:var(--max-w);margin:0 auto;
+  padding:2rem 2rem 6rem;
+  display:flex;flex-direction:column;gap:6rem;
+}
+
+/* ═══════════════════ WORK CARD ═══════════════════ */
+.work-card{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:2.5rem;align-items:center;
+  opacity:0;transform:translateY(40px);
+  transition:all .8s cubic-bezier(.22,1,.36,1);
+}
+.work-card.visible{opacity:1;transform:translateY(0)}
+.work-card.even{direction:rtl}
+.work-card.even>*{direction:ltr}
+
+.work-image{
+  position:relative;overflow:hidden;border-radius:4px;
+  aspect-ratio:4/3;background:var(--bg-card);
+}
+.work-image img{
+  width:100%;height:100%;object-fit:cover;
+  transition:transform 1s cubic-bezier(.22,1,.36,1);
+  filter:brightness(.85) saturate(.85);
+}
+.work-card:hover .work-image img{
+  transform:scale(1.05);filter:brightness(1) saturate(1);
+}
+.work-image .img-placeholder{
+  width:100%;height:100%;
+  display:flex;align-items:center;justify-content:center;
+  color:var(--muted);font-size:.8rem;
+}
+.work-image.loading img{opacity:0}
+.work-image.loading::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(90deg,var(--bg-card) 25%,var(--bg-card-hover) 50%,var(--bg-card) 75%);
+  background-size:200% 100%;animation:shimmer 1.5s ease-in-out infinite;
+}
+@keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+.work-image.loaded img{opacity:1;transition:opacity .5s}
+.work-image.loaded::before{display:none}
+.wc-fallback{display:flex;align-items:center;justify-content:center;height:100%;color:var(--muted);font-size:.7rem;font-family:var(--font-mono)}
+
+.work-text{padding:1rem 0}
+.work-year{
+  font-family:var(--font-mono);font-size:.7rem;
+  color:var(--gold);letter-spacing:.15em;margin-bottom:.5rem;
+}
+.work-title{
+  font-family:var(--font-display);
+  font-size:clamp(1.5rem,3vw,2rem);
+  font-weight:600;margin-bottom:.25rem;
+}
+.work-title-de{
+  font-family:var(--font-body);font-size:.85rem;
+  font-weight:300;font-style:italic;
+  color:var(--muted);margin-bottom:1rem;
+}
+.work-desc{
+  font-size:.9rem;line-height:1.8;
+  color:var(--muted);
+}
+.work-tags{
+  display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem;
+}
+.work-tags span{
+  font-family:var(--font-mono);font-size:.6rem;
+  padding:.2rem .5rem;border:1px solid rgba(201,168,76,.2);
+  color:var(--gold-dim);border-radius:2px;
+  letter-spacing:.05em;
+}
+
+/* ═══════════════════ QUOTE DIVIDER ═══════════════════ */
+.quote-divider{
+  max-width:var(--max-w);margin:0 auto;
+  padding:6rem 2rem;text-align:center;
+  position:relative;
+  background:linear-gradient(180deg,transparent,rgba(219,184,94,.04) 30%,rgba(219,184,94,.06) 70%,transparent);
+}
+.quote-divider-inner{
+  max-width:600px;margin:0 auto;
+  border:1px solid rgba(219,184,94,.18);
+  border-left:none;border-right:none;
+  padding:3rem 2rem;
+}
+.quote-divider::before,.quote-divider::after{
+  content:'';display:block;width:40px;height:1px;
+  background:var(--gold-dim);margin:2.5rem auto;
+}
+.quote-diamond{
+  color:var(--gold-dim);font-size:.6rem;
+  margin:1.2rem auto;opacity:.5;
+}
+.quote-text{
+  font-family:var(--font-display);
+  font-size:clamp(1.3rem,2.5vw,1.8rem);
+  font-weight:300;font-style:italic;
+  line-height:1.6;color:var(--ink);
+}
+.quote-original{
+  font-family:var(--font-mono);font-size:.65rem;
+  color:rgba(160,152,136,.35);
+  margin-top:.75rem;line-height:1.6;
+  max-width:520px;margin-left:auto;margin-right:auto;
+}
+.quote-author{
+  font-family:var(--font-mono);font-size:.7rem;
+  color:var(--gold-dim);margin-top:1rem;
+  letter-spacing:.15em;
+}
+
+/* ═══════════════════ TIMELINE BAR ═══════════════════ */
+.timeline-bar{
+  max-width:var(--max-w);margin:0 auto;
+  padding:1rem 2rem 0;
+  position:sticky;top:0;z-index:50;
+  background:linear-gradient(180deg,var(--bg) 60%,transparent);
+  height:60px;
+}
+.timeline-bar-inner{
+  display:flex;gap:0;align-items:center;
+  height:100%;position:relative;
+}
+.timeline-bar-inner .segment{
+  flex:1;height:2px;background:var(--bg-card);
+  position:relative;transition:background .4s;
+}
+.timeline-bar-inner .segment.filled{background:var(--gold)}
+.timeline-bar-inner .segment.active{background:var(--gold);height:3px}
+
+/* ═══════════════════ LIFE TIMELINE ═══════════════════ */
+.life-section{
+  max-width:var(--max-w);margin:0 auto;
+  padding:6rem 2rem 3rem;
+}
+.life-section h2{
+  font-family:var(--font-display);
+  font-size:clamp(1.5rem,3vw,2rem);
+  font-weight:600;text-align:center;margin-bottom:.5rem;
+  color:var(--ink);
+}
+.life-section .sec-sub{
+  text-align:center;font-family:var(--font-mono);
+  font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--gold-dim);margin-bottom:4rem;
+}
+
+.life-timeline{
+  position:relative;padding:0;
+}
+.life-timeline::before{
+  content:'';position:absolute;left:50%;top:0;bottom:0;
+  width:1px;background:linear-gradient(180deg,transparent,var(--gold-dim) 5%,var(--gold) 50%,var(--gold-dim) 95%,transparent);
+  transform:translateX(-50%);
+}
+
+.life-item{
+  display:flex;align-items:flex-start;
+  margin-bottom:3rem;position:relative;
+  opacity:0;transform:translateY(30px);
+  transition:all .8s cubic-bezier(.22,1,.36,1);
+}
+.life-item.visible{opacity:1;transform:translateY(0)}
+
+.life-item .life-left,
+.life-item .life-right{
+  width:calc(50% - 2rem);
+}
+.life-item .life-left{text-align:right;padding-right:2.5rem}
+.life-item .life-right{text-align:left;padding-left:2.5rem}
+
+.life-dot{
+  position:absolute;left:50%;top:.35rem;
+  width:12px;height:12px;border-radius:50%;
+  background:var(--gold);transform:translateX(-50%);
+  box-shadow:0 0 12px rgba(201,168,76,.3);
+  z-index:2;
+}
+.life-item:nth-child(odd) .life-left{order:1}
+.life-item:nth-child(odd) .life-right{order:2}
+.life-item:nth-child(even) .life-left{order:2;text-align:left;padding-left:2.5rem;padding-right:0}
+.life-item:nth-child(even) .life-right{order:1;text-align:right;padding-right:2.5rem;padding-left:0}
+
+.life-year{
+  font-family:var(--font-mono);font-size:.7rem;
+  color:var(--gold);letter-spacing:.1em;margin-bottom:.3rem;
+}
+.life-title{
+  font-family:var(--font-display);
+  font-size:1.1rem;font-weight:600;color:var(--ink);
+  margin-bottom:.4rem;
+}
+.life-desc{
+  font-size:.85rem;line-height:1.7;
+  color:var(--muted);
+}
+.life-item .life-icon{
+  font-size:1rem;display:inline-block;
+  margin-right:.3rem;
+}
+
+/* ═══════════════════ HISTORICAL CONTEXT ═══════════════════ */
+.history-section{
+  max-width:var(--max-w);margin:0 auto;
+  padding:3rem 2rem 6rem;
+}
+.history-section h2{
+  font-family:var(--font-display);
+  font-size:clamp(1.5rem,3vw,2rem);
+  font-weight:600;text-align:center;margin-bottom:.5rem;
+  color:var(--ink);
+}
+.history-section .sec-sub{
+  text-align:center;font-family:var(--font-mono);
+  font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--gold-dim);margin-bottom:3rem;
+}
+
+.history-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:2rem;
+}
+.history-card{
+  background:var(--bg-card);border-radius:4px;
+  padding:2rem;border:1px solid rgba(201,168,76,.08);
+  opacity:0;transform:translateY(20px);
+  transition:all .6s cubic-bezier(.22,1,.36,1);
+}
+.history-card.history-deep{
+  background:#1e1a16;border-left:3px solid var(--gold-dim);
+}
+.history-card.visible{opacity:1;transform:translateY(0)}
+.history-card:hover{
+  border-color:rgba(201,168,76,.2);
+  background:var(--bg-card-hover);
+}
+.history-era{
+  font-family:var(--font-mono);
+  font-size:.6rem;letter-spacing:.15em;
+  color:var(--gold-dim);margin-bottom:.5rem;
+}
+.history-title{
+  font-family:var(--font-display);
+  font-size:1.2rem;font-weight:600;color:var(--ink);
+  margin-bottom:.5rem;
+}
+.history-dates{
+  font-family:var(--font-mono);font-size:.65rem;
+  color:var(--accent);margin-bottom:.8rem;
+}
+.history-desc{
+  font-size:.85rem;line-height:1.7;color:var(--muted);
+}
+.history-desc .event{
+  display:block;padding-left:.8rem;
+  border-left:1px solid rgba(201,168,76,.15);
+  margin-top:.5rem;
+}
+.history-desc .event:first-child{margin-top:0}
+
+/* ═══════════════════ CORE VOCABULARY WIDE GRID ═══════════════════ */
+.history-grid-wide{grid-template-columns:1fr 1fr 1fr;gap:1.5rem}
+.history-grid-wide .history-card{padding:1.5rem 1.2rem}
+@media(max-width:480px){.history-grid-wide{grid-template-columns:1fr;gap:1.2rem}}
+@media(min-width:481px)and(max-width:768px){.history-grid-wide{grid-template-columns:1fr 1fr;gap:1.5rem}}
+
+/* ═══════════════════ FOOTER ═══════════════════ */
+.site-footer{
+  border-top:1px solid rgba(201,168,76,.1);
+  padding:4rem 2rem;text-align:center;
+  color:var(--muted);font-size:.8rem;
+}
+.site-footer .symbol{
+  font-size:2rem;color:var(--gold-dim);margin-bottom:1.5rem;
+}
+.site-footer .closing{
+  font-family:var(--font-display);font-size:1.05rem;
+  font-style:italic;color:var(--muted);
+  max-width:560px;margin:0 auto 1.5rem;line-height:1.8;
+}
+.site-footer a{color:var(--gold-dim)}
+
+/* ═══════════════════ ANIMATIONS ═══════════════════ */
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(20px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+/* ═══════════════════ BACK TO TOP ═══════════════════ */
+.back-to-top{
+  position:fixed;bottom:2rem;right:2rem;z-index:200;
+  width:44px;height:44px;border-radius:50%;
+  background:var(--bg-card);border:1px solid rgba(219,184,94,.2);
+  color:var(--gold-dim);font-size:1.2rem;
+  cursor:pointer;opacity:0;pointer-events:none;
+  transition:opacity .4s,border-color .4s,background .4s;
+  display:flex;align-items:center;justify-content:center;
+}
+.back-to-top.visible{opacity:1;pointer-events:auto}
+.back-to-top:hover{
+  border-color:var(--gold);color:var(--gold);
+  background:var(--bg-card-hover);
+}
+
+/* ═══════════════════ READING PROGRESS ═══════════════════ */
+.reading-progress{
+  position:fixed;top:0;left:0;height:2px;
+  background:var(--gold);z-index:300;
+  width:0%;transition:width .1s linear;
+}
+
+/* ═══════════════════ IMAGE LIGHTBOX ═══════════════════ */
+.lightbox{
+  position:fixed;inset:0;z-index:500;
+  background:rgba(13,12,10,.92);
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;pointer-events:none;transition:opacity .4s;
+  cursor:pointer;
+}
+.lightbox.open{opacity:1;pointer-events:auto}
+.lightbox img{
+  max-width:90vw;max-height:90vh;
+  object-fit:contain;border-radius:4px;
+  box-shadow:0 0 60px rgba(0,0,0,.5);
+}
+.lightbox-close{
+  position:absolute;top:1.5rem;right:1.5rem;
+  color:var(--muted);font-size:2rem;cursor:pointer;
+  width:40px;height:40px;display:flex;align-items:center;justify-content:center;
+  transition:color .3s;
+}
+.lightbox-close:hover{color:var(--ink)}
+
+/* ═══════════════════ NEW SECTIONS ═══════════════════ */
+.photo-inset{
+  max-width:var(--max-w);margin:0 auto;padding:2rem 2rem 0;
+  text-align:center;
+}
+.photo-inset img{
+  max-width:280px;border-radius:50%;
+  border:2px solid rgba(219,184,94,.2);
+  filter:sepia(.2) brightness(.9);
+}
+.photo-inset .photo-cap{
+  font-family:var(--font-mono);font-size:.6rem;
+  color:var(--gold-dim);margin-top:.6rem;
+  letter-spacing:.1em;
+}
+
+.poetry-stanza{
+  max-width:600px;margin:0 auto;padding:2rem;
+  text-align:center;
+}
+.poetry-stanza .verse-de{
+  font-family:var(--font-display);font-size:1.1rem;
+  font-style:italic;color:var(--muted);
+  line-height:2;margin-bottom:1.5rem;
+}
+.poetry-stanza .verse-zh{
+  font-size:.9rem;color:var(--ink);
+  line-height:2.2;margin-bottom:1.5rem;
+}
+.poetry-stanza .verse-title{
+  font-family:var(--font-mono);font-size:.65rem;
+  color:var(--gold-dim);letter-spacing:.15em;
+  margin-bottom:1.5rem;
+}
+
+.fun-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:1.5rem;max-width:var(--max-w);margin:0 auto;padding:0 2rem 4rem;
+}
+.fun-card{
+  background:var(--bg-card);border-radius:4px;
+  padding:1.5rem;border:1px solid rgba(201,168,76,.08);
+  transition:border-color .4s;
+}
+.fun-card:hover{border-color:rgba(201,168,76,.2)}
+.fun-card .fun-icon{font-size:1.5rem;margin-bottom:.5rem}
+.fun-card .fun-title{
+  font-family:var(--font-display);font-size:1rem;
+  font-weight:600;color:var(--ink);margin-bottom:.3rem;
+}
+.fun-card .fun-body{
+  font-size:.82rem;line-height:1.7;color:var(--muted);
+}
+
+/* ═══════════════════ RESPONSIVE ═══════════════════ */
+
+/* ── Phone (< 480px) ── */
+@media(max-width:480px){
+  .life-section{padding:3rem 1.2rem 2rem}
+  .life-section .sec-sub{margin-bottom:2.5rem}
+  .life-timeline::before{left:1.5rem}
+  .life-item{flex-direction:column;padding-left:3rem;margin-bottom:2rem}
+  .life-item .life-left,.life-item .life-right{width:100%;padding:0!important;text-align:left!important}
+  .life-item .life-left{margin-bottom:.3rem}
+  .life-dot{left:1.5rem;transform:translateX(-50%)}
+  .life-item:nth-child(even) .life-left,.life-item:nth-child(even) .life-right{order:initial!important;text-align:left!important;padding:0!important}
+  .life-year{font-size:.65rem}
+  .life-title{font-size:1rem}
+  .life-desc{font-size:.8rem}
+  .history-section{padding:2rem 1.2rem 4rem}
+  .history-grid{grid-template-columns:1fr}
+  .history-card{padding:1.5rem}
+  :root{--max-w:100%}
+  .timeline-nav{display:none}
+  .timeline-bar{display:none}
+  .hero{min-height:85vh;height:auto;padding:4rem 0 2rem}
+  .hero-content{padding:1.2rem}
+  .hero-title{font-size:clamp(1.8rem,12vw,2.8rem)}
+  .hero-title .en{font-size:.45em}
+  .hero-kicker{font-size:.65rem;margin-bottom:1rem}
+  .hero-sub{font-size:.6rem}
+  .hero-arrow{bottom:1.5rem}
+  .section-intro{padding:3rem 1.2rem 2rem}
+  .section-intro p{font-size:.9rem}
+  .works-grid{padding:1.5rem 1.2rem 3rem;gap:3rem}
+  .work-card{grid-template-columns:1fr;gap:1rem}
+  .work-card.even{direction:ltr}
+  .work-year{font-size:.65rem}
+  .work-title{font-size:1.4rem}
+  .work-title-de{font-size:.75rem}
+  .work-desc{font-size:.85rem}
+  .work-text{padding:0}
+  .video-caption{font-size:.8rem}
+  .quote-divider{padding:3rem 1.2rem}
+  .quote-text{font-size:1.1rem}
+  .quote-author{font-size:.65rem}
+  .quote-divider::before,.quote-divider::after{width:30px}
+  .site-footer{padding:2.5rem 1.2rem}
+  .site-footer .symbol{font-size:1.5rem}
+}
+
+/* ── Small Tablet (481px – 768px) ── */
+@media(min-width:481px)and(max-width:768px){
+  .life-section{padding:4rem 1.5rem 2rem}
+  .history-grid{grid-template-columns:1fr}
+  .history-section{padding:2rem 1.5rem 4rem}
+  :root{--max-w:100%}
+  .timeline-nav{display:none}
+  .timeline-bar{display:none}
+  .hero{min-height:80vh}
+  .hero-title{font-size:clamp(2.2rem,8vw,3.5rem)}
+  .works-grid{padding:2rem 1.5rem 4rem;gap:4rem}
+  .work-card{grid-template-columns:1fr;gap:1.5rem}
+  .work-card.even{direction:ltr}
+  .section-intro{padding:4rem 1.5rem 2rem}
+  .quote-divider{padding:4rem 1.5rem}
+  .site-footer{padding:3rem 1.5rem}
+}
+
+/* ── Tablet (769px – 1024px) ── */
+@media(min-width:769px)and(max-width:1024px){
+  .hero-title{font-size:clamp(2.8rem,6vw,4rem)}
+  .works-grid{gap:5rem}
+  .work-card{gap:2rem}
+  .section-intro{padding:5rem 2rem 3rem}
+}
+
+/* ── Desktop large (1200px+) ── */
+@media(min-width:1200px){
+  :root{--max-w:1100px}
+  .hero-title{font-size:clamp(3.5rem,6vw,5.5rem)}
+}
+
+/* ── Desktop 2-column grid (1025px+) ── */
+@media(min-width:1025px){
+  .work-card:nth-child(odd){direction:ltr}
+  .work-card:nth-child(even){direction:rtl}
+  .work-card:nth-child(even)>*{direction:ltr}
+}
+
+/* ── Extra small height screens ── */
+@media(max-height:600px){
+  .hero{min-height:100vh;height:auto;padding:3rem 0}
+  .hero-content{padding:1rem}
+  .hero-arrow{display:none}
+}
+
+/* ── prefers-reduced-motion ── */
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.01ms!important;
+    animation-iteration-count:1!important;
+    transition-duration:.01ms!important;
+  }
+  html{scroll-behavior:auto}
+}
+
+/* ── Print ── */
+@media print{
+  .timeline-nav,.timeline-bar,.hero-arrow,.back-to-top,.lightbox,.reading-progress{display:none!important}
+  body{background:#fff;color:#000}
+  .hero{min-height:auto;height:auto;page-break-after:always}
+  .hero-bg{filter:none!important}
+  .work-card{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ READING PROGRESS ═══ -->
+<div class="reading-progress" id="readingProgress"></div>
+
+<!-- ═══ SECTION NAV ═══ -->
+<nav class="section-nav" id="sectionNav">
+  <div class="section-nav-inner">
+    <span class="nav-diamond">◇</span>
+    <a href="#lifeTimeline" data-section="lifeTimeline">生平</a>
+    <a href="#w01" data-section="works">作品</a>
+    <span class="nav-sep"></span>
+    <a href="#history" data-section="history">时代</a>
+    <a href="#research" data-section="research">研究</a>
+    <a href="#nobel" data-section="nobel">诺奖</a>
+    <a href="#poetry" data-section="poetry">诗歌</a>
+    <a href="#hesse-east" data-section="hesse-east">东方</a>
+    <a href="#paintings" data-section="paintings">绘画</a>
+    <span class="nav-sep"></span>
+    <div class="nav-dropdown" id="navMore">
+      <button class="nav-dropdown-btn">更多 ▾</button>
+      <div class="nav-dropdown-menu">
+        <a href="#funfacts">花絮</a>
+        <a href="#vocabulary">词汇</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<header class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-kicker">Geistreich · Spiritual Realm</div>
+    <h1 class="hero-title">
+      黑塞的精神王国
+      <span class="en">Hermann Hesse · 1877–1962</span>
+    </h1>
+    <div class="hero-sub">11 部作品 · 穿越世纪的精神旅程</div>
+  </div>
+  <div class="hero-arrow" onclick="document.getElementById('w01').scrollIntoView({behavior:'smooth'})">⌄</div>
+</header>
+
+<!-- ═══ INTRO ═══ -->
+<section class="section-intro">
+  <p>赫尔曼·黑塞，一位用灵魂书写的精神炼金术士。他的十一部作品不是小说，而是一次次灵魂的探险——从乡愁到觉醒，从分裂到整合，从个体到宇宙。每一部都是一面镜子，映照出我们内心中尚未抵达的精神王国。</p>
+</section>
+
+<!-- ═══ PHOTO ═══ -->
+<div class="photo-inset">
+  <img src="images/hesse-portrait.webp" alt="赫尔曼·黑塞" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+  <div style="display:none;font-size:.8rem;color:var(--muted);padding:1rem">赫尔曼·黑塞 — 提契诺, 约1946年</div>
+  <div class="photo-cap">HERMANN HESSE · 大约1946年 · 瑞士蒙塔尼奥拉</div>
+</div>
+
+<!-- ═══ LIFE TIMELINE ═══ -->
+<section class="life-section" id="lifeTimeline">
+  <h2>黑塞的生命历程</h2>
+  <div class="sec-sub">Werdegang · 从叛逆少年到精神隐士</div>
+  <div class="life-timeline">
+    <div class="life-item">
+      <div class="life-dot"></div>
+      <div class="life-left">
+        <div class="life-year">1877</div>
+        <div class="life-title">出生 · 卡尔夫</div>
+      </div>
+      <div class="life-right">
+        <div class="life-desc">生于德国符腾堡传教士家庭。父辈在印度传教——他一生都在走一条相反的路：从西方走向东方，从外在使命走向内在朝圣。</div>
+      </div>
+    </div>
+    <div class="life-item">
+      <div class="life-dot"></div>
+      <div class="life-left">
+        <div class="life-year">1891–1892</div>
+        <div class="life-title">毛尔布隆修道院 · 崩溃</div>
+      </div>
+      <div class="life-right">
+        <div class="life-desc">14岁考入神学院，7个月后逃跑——自杀未遂，送进精神病院。原型创伤：〈在轮下〉的来源。</div>
+      </div>
+    </div>
+    <div class="life-item">
+      <div class="life-dot"></div>
+      <div class="life-left">
+        <div class="life-year">1894–1903</div>
+        <div class="life-title">书店学徒 · 自学之路</div>
+      </div>
+      <div class="life-right">
+        <div class="life-desc">辍学后在书店做学徒，白天卖书、夜晚读书——自学歌德、尼采、印度哲学。沉默的十年，黑塞真正的大学。</div>
+      </div>
+    </div>
+    <div class="life-item">
+      <div class="life-dot"></div>
+      <div class="life-left">
+        <div class="life-year">1904</div>
+        <div class="life-title">〈卡门青德〉· 成名</div>
+      </div>
+      <div class="life-right">
+        <div class="life-desc">处女作一鸣惊人。娶摄影师 Maria Bernoulli——她比他大9岁，优雅、敏感、热爱音乐。定居康斯坦茨湖畔，三个儿子相继出生。德国乡村文人梦——但田园牧歌只持续了七年。</div>
+      </div>
+    </div>
+    <div class="life-item">
+      <div class="life-dot"></div>
+      <div class="life-left">
+        <div class="life-year">1911</div>
+        <div class="life-title">家庭崩解 · 逃向东方</div>
+      </div>
+      <div class="life-right">
+        <div class="life-desc">Maria 精神分裂发作——偏执、幻觉、攻击性。家庭变成战场。黑塞无法承受，独自逃往锡兰和印度——但东方并没有给他答案，只是让他知道自己逃不掉。</div>
+      </div>
+    </div>
+    <div class="life-item">
+      <div class="life-dot"></div>
+      <div class="life-left">
+        <div class="life-year">1914–1919</div>
+        <div class="life-title">世界大战 · 崩溃与重生</div>
+      </div>
+      <div class="life-right">
+        <div class="life-desc">公开反战被骂作叛国者——父亲去世、Maria被送入精神病院、幼子重病——三重打击下黑塞彻底崩溃。1916年起在卢塞恩接受荣格学派心理分析——72次面对面session，Lang博士帮他面对一生不敢碰的伤口：父亲的冷漠、母亲的缺席、对自我灵魂的恐惧。从浪漫主义诗人蜕变为灵魂分析师——没有荣格，就没有〈德米安〉、〈荒原狼〉和〈悉达多〉。</div>
+      </div>
+    </div>
+    <div class="life-item">
+      <div class="life-dot"></div>
+      <div class="life-left">
+        <div class="life-year">1919</div>
+        <div class="life-title">提契诺 · 新生</div>
+      </div>
+      <div class="life-right">
+        <div class="life-desc">42岁抛下一切，独自搬到瑞士南部。一座石屋、满山栗子树——以〈德米安〉重新开始。让德国青年以为是个20岁新锐作家。</div>
+      </div>
+    </div>
+    <div class="life-item">
+      <div class="life-dot"></div>
+      <div class="life-left">
+        <div class="life-year">1924</div>
+        <div class="life-title">Ruth Wenger · 灾难婚姻</div>
+      </div>
+      <div class="life-right">
+        <div class="life-desc">46岁娶了20岁的Ruth——闪婚、闪崩。蜜月第三天就开始争吵。Ruth要自由、要社交、要城市生活——黑塞要孤独、要写作、要山林。两年后离婚，他从此对婚姻制度死了心——但又给了世界〈荒原狼〉。</div>
+      </div>
+    </div>
+    <div class="life-item">
+      <div class="life-dot"></div>
+      <div class="life-left">
+        <div class="life-year">1927</div>
+        <div class="life-title">〈荒原狼〉· 灵魂分裂</div>
+      </div>
+      <div class="life-right">
+        <div class="life-desc">Haller就是黑塞自己——中产阶级的体面与灵魂野兽之间的撕扯。1960年代反文化的圣经。</div>
+      </div>
+    </div>
+    <div class="life-item">
+      <div class="life-dot"></div>
+      <div class="life-left">
+        <div class="life-year">1931</div>
+        <div class="life-title">Ninon Dolbin · 终身的守护</div>
+      </div>
+      <div class="life-right">
+        <div class="life-desc">54岁——第三次婚姻。Ninon 是艺术史家，比他小18岁。这一次不一样：她理解他的孤独，不索取他的在场。他们住在蒙塔尼奥拉石屋里，她整理他的手稿、管理他的信件、挡掉所有打扰。黑塞终于被一个人看见了——不是作为作家，而是作为那个需要被守护的灵魂。他们一起度过了他最后的31年。</div>
+      </div>
+    </div>
+    <div class="life-item">
+      <div class="life-dot"></div>
+      <div class="life-left">
+        <div class="life-year">1933–1943</div>
+        <div class="life-title">纳粹时代 · 最后的堡垒</div>
+      </div>
+      <div class="life-right">
+        <div class="life-desc">身在瑞士、作品被审查。拒绝合作、暗中帮助流亡者。用十二年修筑〈玻璃球游戏〉——人类精神在野兽时代的尊严。</div>
+      </div>
+    </div>
+    <div class="life-item">
+      <div class="life-dot"></div>
+      <div class="life-left">
+        <div class="life-year">1946 · 1962</div>
+        <div class="life-title">诺贝尔奖 · 归去</div>
+      </div>
+      <div class="life-right">
+        <div class="life-desc">诺奖颁奖词：古典的人道理想与高尚的风格。1962年8月9日，在蒙塔尼奥拉安详去世，享年87岁。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ WORKS ═══ -->
+<section class="works-grid" id="worksContainer">
+
+  <!-- w01: Peter Camenzind -->
+  <article class="work-card" id="w01">
+    <div class="work-image loading"><img src="images/camenzind.webp" alt="彼得·卡门青德" loading="lazy" width="800" height="600" onload="this.parentElement.classList.replace('loading','loaded')"></div>
+    <div class="work-text">
+      <div class="work-year">1904</div>
+      <h2 class="work-title">彼得·卡门青德</h2>
+      <div class="work-title-de">Peter Camenzind</div>
+      <p class="work-desc">一个瑞士山村少年走向城市的旅程——在慕尼黑和苏黎世之间徘徊，经历了友情、爱情与孤独，最终回到山间，在自然与人类之爱中找到归宿。黑塞的处女作一鸣惊人，托马斯·曼盛赞其"清新如阿尔卑斯山风"。这部作品奠定了黑塞贯穿一生的母题：现代人的精神漂泊与回归自然。</p>
+      <div class="work-tags"><span>乡愁</span><span>觉醒</span><span>自然</span><span>流浪</span><span>成名作</span></div>
+    </div>
+  </article>
+
+  <!-- w02: Unterm Rad -->
+  <article class="work-card" id="w02">
+    <div class="work-image loading"><img src="images/unterm_rad.webp" alt="在轮下" loading="lazy" width="800" height="600" onload="this.parentElement.classList.replace('loading','loaded')"></div>
+    <div class="work-text">
+      <div class="work-year">1906</div>
+      <h2 class="work-title">在轮下</h2>
+      <div class="work-title-de">Unterm Rad</div>
+      <p class="work-desc">以毛尔布隆神学院经历为原型，讲述少年汉斯在压抑的教育机器下从天才走向毁灭。黑塞最锋利的社会批判——尖子生的悲剧不是不够努力，而是从未被允许成为自己。1906年出版后引发德国教育界震动，被比作"德国的〈红与黑〉"。黑塞本人坦言："这是我伤疤上长出的文字。"</p>
+      <div class="work-tags"><span>教育</span><span>批判</span><span>少年</span><span>悲剧</span></div>
+    </div>
+  </article>
+
+  <!-- w03: Gertrud -->
+  <article class="work-card" id="w03">
+    <div class="work-image loading"><img src="images/gertrud.webp" alt="格特鲁德" loading="lazy" width="800" height="600" onload="this.parentElement.classList.replace('loading','loaded')"></div>
+    <div class="work-text">
+      <div class="work-year">1910</div>
+      <h2 class="work-title">格特鲁德</h2>
+      <div class="work-title-de">Gertrud</div>
+      <p class="work-desc">作曲家库恩在一次意外中致残后，与女高音格特鲁德和歌唱家穆特之间的三角纠葛。探讨了一个哲学命题：两颗孤独的灵魂能否通过艺术真正相遇？尼采式的"日神与酒神"对立已隐现其中。黑塞本人是莫扎特的狂热爱好者，书中大量音乐分析出自少年时期在教堂唱诗班的亲身经历。</p>
+      <div class="work-tags"><span>音乐</span><span>爱情</span><span>孤独</span><span>艺术</span></div>
+    </div>
+  </article>
+
+  <!-- w04: Roßhalde -->
+  <article class="work-card" id="w04">
+    <div class="work-image loading"><img src="images/rosshalde.webp" alt="罗斯哈尔德" loading="lazy" width="800" height="600" onload="this.parentElement.classList.replace('loading','loaded')"></div>
+    <div class="work-text">
+      <div class="work-year">1914</div>
+      <h2 class="work-title">罗斯哈尔德</h2>
+      <div class="work-title-de">Roßhalde</div>
+      <p class="work-desc">以自身第一段婚姻为蓝本，讲述画家约翰在创作冲动与家庭责任之间的撕裂。这部"家庭悲剧"（黑塞自语）以近乎冷酷的旁观者视角解剖了一段婚姻的死亡——作者写作时自己正经历着完全相同的崩溃。研究者认为，这是理解黑塞1910年代精神危机的钥匙文本。</p>
+      <div class="work-tags"><span>婚姻</span><span>艺术家</span><span>孤独</span><span>自传性</span></div>
+    </div>
+  </article>
+
+  <!-- w05: Demian -->
+  <article class="work-card" id="w05">
+    <div class="work-image loading"><img src="images/demian.webp" alt="德米安" loading="lazy" width="800" height="600" onload="this.parentElement.classList.replace('loading','loaded')"></div>
+    <div class="work-text">
+      <div class="work-year">1919</div>
+      <h2 class="work-title">德米安</h2>
+      <div class="work-title-de">Demian</div>
+      <p class="work-desc">1919年以"埃米尔·辛克莱"为笔名出版——许多德国青年以为作者是个20岁新锐作家。荣格心理学首次文学化：阿尼玛（夏娃夫人）、阴影（克罗默）、自性化（破壳）。托马斯·曼称其为"德国的〈天堂与地狱〉"。1960年代成为全球青年反文化运动核心文本。</p>
+      <div class="work-tags"><span>自我</span><span>启蒙</span><span>双重世界</span><span>荣格</span></div>
+    </div>
+  </article>
+
+  <!-- QUOTE 1 -->
+  <div class="quote-divider">
+    <div class="quote-divider-inner">
+      <div class="quote-text">「每一个人的一生都是通向自己的路——路的提示、一条小径的试探。」</div>
+      <div class="quote-original">„Jedermanns Leben ist ein Weg zu sich selber hin, der Versuch eines Weges, die Andeutung eines Pfades.“</div>
+      <div class="quote-author">— 德米安 · Demian · 1919</div>
+    </div>
+    <div class="quote-diamond">◇</div>
+  </div>
+
+  <!-- w06: Klingsor -->
+  <article class="work-card" id="w06">
+    <div class="work-image loading"><img src="images/klingsor.webp" alt="克林索尔的最后夏天" loading="lazy" width="800" height="600" onload="this.parentElement.classList.replace('loading','loaded')"></div>
+    <div class="work-text">
+      <div class="work-year">1920</div>
+      <h2 class="work-title">克林索尔的最后夏天</h2>
+      <div class="work-title-de">Klingsors letzter Sommer</div>
+      <p class="work-desc">以好友表现主义画家路易斯·莫伊莱特为原型。克林索尔用酗酒、狂欢、暴烈色彩对抗逼近的死亡——不是哀叹，而是燃烧。黑塞自己称之为"生命中唯一一次真正纵情的写作"。色彩之浓烈被誉为"文学中的梵高"，与同年完成的〈德米安〉形成一对：一个向内深入灵魂，一个向外燃烧世界。</p>
+      <div class="work-tags"><span>画家</span><span>色彩</span><span>死亡</span><span>表现主义</span></div>
+    </div>
+  </article>
+
+  <!-- w07: Siddhartha -->
+  <article class="work-card" id="w07">
+    <div class="work-image loading"><img src="images/siddhartha.webp" alt="悉达多" loading="lazy" width="800" height="600" onload="this.parentElement.classList.replace('loading','loaded')"></div>
+    <div class="work-text">
+      <div class="work-year">1922</div>
+      <h2 class="work-title">悉达多</h2>
+      <div class="work-title-de">Siddhartha</div>
+      <p class="work-desc">婆罗门之子悉达多从沙门苦行到世俗欲望，从富商到赌徒，最终在河边领悟：智慧不可言传，只能亲历。黑塞把印度哲学、佛教与西方存在主义熔于一炉。1922年出版时反应平淡，1960年代经美国反文化运动重新发现——成为西方知识分子理解东方智慧的经典入口。亨利·米勒说："这部小说比一千本哲学书更接近真理。"</p>
+      <div class="work-tags"><span>东方智慧</span><span>河流</span><span>求道</span><span>圆融</span></div>
+    </div>
+  </article>
+
+  <!-- w08: Steppenwolf -->
+  <article class="work-card" id="w08">
+    <div class="work-image loading"><img src="images/steppenwolf.webp" alt="荒原狼" loading="lazy" width="800" height="600" onload="this.parentElement.classList.replace('loading','loaded')"></div>
+    <div class="work-text">
+      <div class="work-year">1927</div>
+      <h2 class="work-title">荒原狼</h2>
+      <div class="work-title-de">Steppenwolf</div>
+      <p class="work-desc">1927年出版的"灵魂自传"——哈利·哈勒就是黑塞自己。莫扎特与爵士乐、歌德与汽车——黑塞用超现实主义解剖了现代人的灵魂分裂。荣格分析心理学的文学巅峰。托马斯·曼称之为"德国的〈尤利西斯〉"。1960年代青年人手一本——列侬、凯鲁亚克、鲍勃·迪伦都是哈勒的同类。</p>
+      <div class="work-tags"><span>都市</span><span>分裂</span><span>超现实</span><span>不朽者</span></div>
+    </div>
+  </article>
+
+  <!-- w09: Narziß und Goldmund -->
+  <article class="work-card" id="w09">
+    <div class="work-image loading"><img src="images/narziss_goldmund.webp" alt="纳尔齐斯与歌尔德蒙" loading="lazy" width="800" height="600" onload="this.parentElement.classList.replace('loading','loaded')"></div>
+    <div class="work-text">
+      <div class="work-year">1930</div>
+      <h2 class="work-title">纳尔齐斯与歌尔德蒙</h2>
+      <div class="work-title-de">Narziß und Goldmund</div>
+      <p class="work-desc">理性自律的纳尔齐斯（学者/禁欲）与感性流浪的歌尔德蒙（艺术家/纵欲）——两条截然相反的灵魂路径，却在生命尽头相遇。不是对立，而是互补。黑塞对二律背反（Antinomie）最深刻的表达——理念与感官、精神与自然从来不是选择题。黑塞自认这是他"最具形式完美"的小说。</p>
+      <div class="work-tags"><span>理性</span><span>感性</span><span>修道院</span><span>游历</span><span>二元</span></div>
+    </div>
+  </article>
+
+  <!-- w10: Morgenlandfahrt -->
+  <article class="work-card" id="w10">
+    <div class="work-image loading"><img src="images/morgenland.webp" alt="东方之旅" loading="lazy" width="800" height="600" onload="this.parentElement.classList.replace('loading','loaded')"></div>
+    <div class="work-text">
+      <div class="work-year">1932</div>
+      <h2 class="work-title">东方之旅</h2>
+      <div class="work-title-de">Die Morgenlandfahrt</div>
+      <p class="work-desc">一部薄薄的中篇，却是黑塞最神秘的作品。秘密结社"圣光联盟"的朝圣之旅——成员中有莫扎特、歌德、唐·吉诃德穿越时空同行。黑塞用这部小说回应了一个深刻问题：当一个人丢掉了他的信仰共同体，他能否独自成圣？这是〈玻璃球游戏〉的序章。</p>
+      <div class="work-tags"><span>神秘</span><span>共同体</span><span>精神之旅</span><span>流浪</span></div>
+    </div>
+  </article>
+
+  <!-- QUOTE 2 -->
+  <div class="quote-divider">
+    <div class="quote-divider-inner">
+      <div class="quote-text">「世界并非不完美，也不是在通向完美的漫长途中缓缓跋涉——不，它在每一个瞬间都是完美的。」</div>
+      <div class="quote-original">„Die Welt ist nicht unvollkommen, noch auf einem langen Wege zur Vollkommenheit begriffen. Nein, sie ist vollkommen in jedem Augenblick.“</div>
+      <div class="quote-author">— 玻璃球游戏 · Das Glasperlenspiel · 1943</div>
+    </div>
+    <div class="quote-diamond">◇</div>
+  </div>
+
+  <!-- w11: Glasperlenspiel -->
+  <article class="work-card" id="w11">
+    <div class="work-image loading"><img src="images/glasperlenspiel.webp" alt="玻璃球游戏" loading="lazy" width="800" height="600" onload="this.parentElement.classList.replace('loading','loaded')"></div>
+    <div class="work-text">
+      <div class="work-year">1943</div>
+      <h2 class="work-title">玻璃球游戏</h2>
+      <div class="work-title-de">Das Glasperlenspiel</div>
+      <p class="work-desc">1943年出版——盟军轰炸柏林时，黑塞完成了这部"世界之书"。未来乌托邦卡斯塔利亚中的精英以"玻璃球游戏"追求真理。主人公克内希特从学徒到宗师、从秩序到出走——一个灵魂在精神自由与集体责任之间的永恒张力。诺奖颁奖词称其"以宏大叙事展现了人类精神的最高秩序"。托马斯·曼称其为"继〈魔山〉之后德语文学最伟大的成就"。</p>
+      <div class="work-tags"><span>乌托邦</span><span>知识</span><span>精神</span><span>晚年</span><span>诺贝尔奖</span></div>
+    </div>
+  </article>
+
+</section>
+
+<!-- ═══ HISTORICAL CONTEXT ═══ -->
+<section class="history-section" id="history">
+  <h2>时代的洪流</h2>
+  <div class="sec-sub">Zeitgeist · 黑塞在历史漩涡中的坐标</div>
+  <div class="history-grid">
+    <div class="history-card history-deep">
+      <div class="history-era">1871–1918</div>
+      <div class="history-title">德意志帝国</div>
+      <div class="history-dates">俾斯麦统一 → 威廉二世 → 一战</div>
+      <div class="history-desc">
+        黑塞生于帝国鼎盛期。俾斯麦的铁血造就了一个军事化的德国——纪律、服从、民族主义。<span class="event">黑塞的童年：教堂钟声与军靴声并存。他的反叛不是青春期躁动，是一个敏感灵魂对铁笼的本能抗拒。</span><span class="event">一战爆发时，德国知识分子几乎一边倒支持战争——黑塞是极少数公开反战的作家之一，代价是失去所有德国读者和朋友。</span>
+      </div>
+    </div>
+    <div class="history-card history-deep">
+      <div class="history-era">1919–1933</div>
+      <div class="history-title">魏玛共和国</div>
+      <div class="history-dates">战败 · 民主实验 · 文化黄金</div>
+      <div class="history-desc">
+        德国历史上第一次民主尝试。通货膨胀、失业、政治暴力——但也是表现主义、包豪斯、精神分析的黄金时代。<span class="event">黑塞在这一时期的作品最具爆发力：〈德米安〉(1919)、〈悉达多〉(1922)、〈荒原狼〉(1927)。他在瑞士隐居，但每部作品都是对魏玛时代灵魂危机的回应——当世界崩塌时，人从哪里找到内在的立足点？</span>
+      </div>
+    </div>
+    <div class="history-card history-deep">
+      <div class="history-era">1933–1945</div>
+      <div class="history-title">第三帝国</div>
+      <div class="history-dates">纳粹 · 二战 · 大屠杀</div>
+      <div class="history-desc">
+        人类历史上最黑暗的十二年。托马斯·曼流亡美国、茨威格自杀、本雅明自杀——无数作家在集中营里消失。<span class="event">黑塞在瑞士幸存——但不是逃避，是坚守。他拒绝所有纳粹出版机构的邀请，暗中资助流亡者，在德国边境印刷反纳粹的小册子。完成〈玻璃球游戏〉(1943)时，盟军已经在轰炸柏林——这部关于人类精神的终极守护——竟是在文明崩塌时写成的。</span>
+      </div>
+    </div>
+    <div class="history-card history-deep">
+      <div class="history-era">1945–1962</div>
+      <div class="history-title">战后世界</div>
+      <div class="history-dates">冷战 · 核恐惧 · 东方觉醒</div>
+      <div class="history-desc">
+        二战结束，世界分裂为两个阵营。德国被一分为二，核战争的阴影笼罩一切。<span class="event">黑塞在晚年意外成为全球偶像——他的作品在1960年代被日本、美国年轻人疯狂追捧。一个在两次世界大战中幸存的老隐士，用他的东方智慧治愈了冷战焦虑的下一代。1946年诺奖之后，他几乎不再写小说，而是写诗和书信——像他的玻璃球游戏大师一样，完成了从"创作者"到"存在者"的蜕变。</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="life-section" id="research" style="padding-top:2rem">
+  <h2>黑塞研究的演进与东西方碰撞</h2>
+  <div class="sec-sub">Forschungsgeschichte · 从德语乡土作家到全球精神偶像</div>
+  <div class="life-timeline">
+    <div class="life-item">
+      <div class="life-dot"></div>
+      <div class="life-left"><div class="life-year">1910s–1930s</div><div class="life-title">德语乡土文学</div></div>
+      <div class="life-right"><div class="life-desc">黑塞被视作"乡土浪漫派"（Heimatdichter）传人。纳粹上台后他拒绝合作，作品被冷处理，却未被公开焚烧——因早期作品被误读为"德意志精神"。</div></div>
+    </div>
+    <div class="life-item">
+      <div class="life-dot"></div>
+      <div class="life-left"><div class="life-year">1946–1960</div><div class="life-title">诺奖·复兴</div></div>
+      <div class="life-right"><div class="life-desc">1946年诺奖将黑塞重新推到世界舞台。研究聚焦浪漫主义传统、歌德影响、自传性。1955年第一部系统传记出版。</div></div>
+    </div>
+    <div class="life-item">
+      <div class="life-dot"></div>
+      <div class="life-left"><div class="life-year">1960s–1970s</div><div class="life-title">东方接受</div></div>
+      <div class="life-right"><div class="life-desc">英语世界重新发现黑塞——〈悉达多〉〈荒原狼〉成为反文化运动圣经。日本热潮始于1950年代，中国台湾1970年代翻译〈悉达多〉。研究从纯文学转向比较哲学和跨文化研究。</div></div>
+    </div>
+    <div class="life-item">
+      <div class="life-dot"></div>
+      <div class="life-left"><div class="life-year">1980s–1990s</div><div class="life-title">学术制度化</div></div>
+      <div class="life-right"><div class="life-desc">国际黑塞协会成立，年刊创刊。研究重心转向：荣格心理学与黑塞、黑塞与现代性批判、黑塞政治立场的长期争论。</div></div>
+    </div>
+    <div class="life-item">
+      <div class="life-dot"></div>
+      <div class="life-left"><div class="life-year">2000s–至今</div><div class="life-title">数字人文·全球化</div></div>
+      <div class="life-right"><div class="life-desc">"全球化转向"：中国接受史成为国际显学，印度学者重新解读〈悉达多〉中的"西方人的印度"。数字人文方法追踪其60年创作中关键词的语义迁移。</div></div>
+    </div>
+    <div class="life-item">
+      <div class="life-dot"></div>
+      <div class="life-left"><div class="life-year">东西方碰撞</div><div class="life-title">关键节点</div></div>
+      <div class="life-right"><div class="life-desc">黑塞是"西方中心主义"的背叛者——在尼采和陀思妥耶夫斯基中发现了"西方的疾病"，在印度和中国哲学中寻找解药。通过翻译老子、阅读奥义书、参禅悟道，完成了一次"精神逆向殖民"。</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ NOBEL PRIZE ═══ -->
+<section class="section-intro" id="nobel" style="padding-bottom:2rem">
+  <h2 style="font-family:var(--font-display);font-size:clamp(1.5rem,3vw,2rem);font-weight:600;text-align:center;margin-bottom:.5rem;color:var(--ink)">诺贝尔文学奖 · 1946</h2>
+  <p style="max-width:680px;margin:0 auto;text-align:center;font-size:.9rem;line-height:1.9;color:var(--muted)">
+    颁奖词：「<em>他那灵思盎然的诗篇——它们一方面具有高度的创意和深刻的洞见，一方面象征古典的人道理想与高尚的风格。</em>」<br>
+    <span style="display:block;margin-top:.5rem;font-size:.75rem;font-family:var(--font-mono);color:rgba(160,152,136,.35);line-height:1.8">„for his inspired writings which, while growing in boldness and penetration, exemplify the classical humanitarian ideals and high qualities of style“<br>— Swedish Academy, Nobel Prize in Literature 1946</span>
+  </p>
+</section>
+<section class="works-grid" style="padding-top:0;gap:3rem;max-width:720px">
+  <article class="work-card" style="grid-template-columns:1fr;gap:1.5rem;opacity:1">
+    <div class="work-text">
+      <p class="work-desc" style="font-size:.9rem;line-height:1.8">瑞典学院常任秘书安德斯·厄斯特林在授奖辞中特别指出：<em>"黑塞的〈玻璃球游戏〉以宏大叙事展现了人类精神的最高秩序，其语言具有雕刻般的精确与音乐般的韵律。"</em></p>
+      <p class="work-desc" style="font-size:.85rem;margin-top:1rem">同年获奖的还有：安德烈·纪德（1947）· T.S.艾略特（1948）· 威廉·福克纳（1949）· 伯特兰·罗素（1950）。黑塞在战后的第一批获奖者中，代表了一种被战争摧残却未被摧毁的欧洲人文主义传统。</p>
+    </div>
+  </article>
+</section>
+
+
+<!-- ═══ POETRY ═══ -->
+<section class="history-section" id="poetry" style="padding-top:1rem">
+  <h2>黑塞的诗</h2>
+  <div class="sec-sub">Gedichte · 诺奖颁奖词：灵思盎然的诗篇</div>
+  <div class="poetry-stanza">
+    <div class="verse-title">〈阶段〉Stufen · 1941</div>
+    <div class="verse-de">
+      Wie jede Blüte welkt und jede Jugend<br>
+      Dem Alter weicht, blüht jede Lebensstufe,<br>
+      Blüht jede Weisheit auch und jede Tugend<br>
+      Zu ihrer Zeit und darf nicht ewig dauern.<br>
+      Es muß das Herz bei jedem Lebensrufe<br>
+      Bereit zum Abschied sein und Neubeginne,<br>
+      Um sich in Tapferkeit und ohne Trauern<br>
+      In andre, neue Bindungen zu geben.<br>
+      Und jedem Anfang wohnt ein Zauber inne,<br>
+      Der uns beschützt und der uns hilft, zu leben.
+    </div>
+    <div class="verse-zh">
+      正如每朵花都会凋谢，每个青春<br>
+      都会让位给年岁——生命的每一阶段，<br>
+      每一种智慧、每一种德行<br>
+      都只在它的时节绽放，不会永恒。<br>
+      在生命每一次呼唤时，心必须<br>
+      准备好告别与重新开始，<br>
+      以勇气、没有哀伤地<br>
+      将自己交付给新的联结。<br>
+      每一个开始都内含一种魔力，<br>
+      它守护我们，帮我们活下去。
+    </div>
+    <div style="font-size:.65rem;color:rgba(160,152,136,.3);font-family:var(--font-mono)">
+      — 节选自〈阶段〉，黑塞最著名的诗歌之一，写于二战最黑暗的1941年
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ HESSE & EAST ═══ -->
+<section class="history-section" id="hesse-east" style="padding-top:1rem">
+  <h2>黑塞与东方</h2>
+  <div class="sec-sub">Ost und West · 一个西方灵魂的东方朝圣</div>
+  <div class="history-grid">
+    <div class="history-card history-deep">
+      <div class="history-era">INDISCHE PHILOSOPHIE</div>
+      <div class="history-title">印度哲学</div>
+      <div class="history-desc">外祖父在印度传教30年，母亲出生于印度。黑塞童年被印度神话包围——〈薄伽梵歌〉、〈奥义书〉陪伴他一生。〈悉达多〉不是东方学，是一个西方人用印度的语法讲自己的故事。</div>
+    </div>
+    <div class="history-card history-deep">
+      <div class="history-era">TAOISMUS</div>
+      <div class="history-title">道家</div>
+      <div class="history-desc">黑塞自称「道家思想的追随者」。1911年亚洲之旅后深入研读老子〈道德经〉。〈玻璃球游戏〉中的「无为而治」「阴阳合一」直接来自道家。他在给友人的信中写道："老子是我精神生活中最伟大的体验之一。"</div>
+    </div>
+    <div class="history-card history-deep">
+      <div class="history-era">ZEN-BUDDHISMUS</div>
+      <div class="history-title">禅宗</div>
+      <div class="history-desc">黑塞通过铃木大拙的英文著作接触禅宗。〈悉达多〉中「倾听河流」的顿悟场景本质上是禅宗的「见性」——不是学习真理，是成为真理。晚年他每日冥想，书房挂着日本禅画。</div>
+    </div>
+    <div class="history-card history-deep">
+      <div class="history-era">GEISTIGER BRÜCKENBAU</div>
+      <div class="history-title">精神桥梁</div>
+      <div class="history-desc">黑塞是西方文学史上最彻底的"东西方融合者"。他既不崇拜东方也不诋毁西方——他在两者之间架桥。〈玻璃球游戏〉的卡斯塔利亚就是一个"精神联合国"，容纳人类所有文明的精华。</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ PAINTINGS ═══ -->
+<section class="history-section" id="paintings" style="padding-top:1rem">
+  <h2>黑塞的绘画</h2>
+  <div class="sec-sub">Aquarelle · 三千幅水彩中的诗意世界</div>
+  <div style="max-width:var(--max-w);margin:0 auto;padding:0 2rem;text-align:center">
+    <p style="font-size:.9rem;line-height:1.9;color:var(--muted);max-width:680px;margin:0 auto 2rem">
+      黑塞一生创作了超过3000幅水彩画——提契诺的山峦、卢加诺湖的波光、蒙塔尼奥拉的花园。他不是"会画画的作家"，而是一个在色彩中寻找与文字平行真理的视觉诗人。他的画作曾在瑞士多次展出，研究者认为其"色彩的透明感"与他文字中的"精神清澈"是同一种品质。
+    </p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.8rem;max-width:1100px;margin:0 auto">
+      <div class="work-image loading" style="aspect-ratio:640/722"><img src="images/watercolor-01.webp" alt="提契诺田园" loading="lazy" width="640" height="722" onload="this.parentElement.classList.replace('loading','loaded')" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=wc-fallback>提契诺田园</div>'"></div>
+      <div class="work-image loading" style="aspect-ratio:500/439"><img src="images/watercolor-02.webp" alt="蒙塔尼奥拉群山" loading="lazy" width="500" height="439" onload="this.parentElement.classList.replace('loading','loaded')" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=wc-fallback>蒙塔尼奥拉群山</div>'"></div>
+      <div class="work-image loading" style="aspect-ratio:640/656"><img src="images/watercolor-03.webp" alt="山间村落" loading="lazy" width="640" height="656" onload="this.parentElement.classList.replace('loading','loaded')" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=wc-fallback>山间村落</div>'"></div>
+      <div class="work-image loading" style="aspect-ratio:800/653"><img src="images/watercolor-04.webp" alt="热带花园" loading="lazy" width="800" height="653" onload="this.parentElement.classList.replace('loading','loaded')" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=wc-fallback>热带花园</div>'"></div>
+      <div class="work-image loading" style="aspect-ratio:800/742"><img src="images/watercolor-05.webp" alt="密林奇树" loading="lazy" width="800" height="742" onload="this.parentElement.classList.replace('loading','loaded')" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=wc-fallback>密林奇树</div>'"></div>
+      <div class="work-image loading" style="aspect-ratio:458/606"><img src="images/watercolor-06.webp" alt="乡村房屋" loading="lazy" width="458" height="606" onload="this.parentElement.classList.replace('loading','loaded')" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=wc-fallback>乡村房屋</div>'"></div>
+      <div class="work-image loading" style="aspect-ratio:640/510"><img src="images/watercolor-07.webp" alt="山坡村落" loading="lazy" width="640" height="510" onload="this.parentElement.classList.replace('loading','loaded')" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=wc-fallback>山坡村落</div>'"></div>
+      <div class="work-image loading" style="aspect-ratio:1/1"><img src="images/watercolor-08.webp" alt="白花" loading="lazy" width="640" height="640" onload="this.parentElement.classList.replace('loading','loaded')" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=wc-fallback>白花</div>'"></div>
+      <div class="work-image loading" style="aspect-ratio:640/679"><img src="images/watercolor-09.webp" alt="河流雪山" loading="lazy" width="640" height="679" onload="this.parentElement.classList.replace('loading','loaded')" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=wc-fallback>河流雪山</div>'"></div>
+      <div class="work-image loading" style="aspect-ratio:1/1"><img src="images/watercolor-10.webp" alt="向日葵花瓶" loading="lazy" width="640" height="640" onload="this.parentElement.classList.replace('loading','loaded')" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=wc-fallback>向日葵花瓶</div>'"></div>
+      <div class="work-image loading" style="aspect-ratio:640/587"><img src="images/watercolor-11.webp" alt="黄墙红瓦村庄" loading="lazy" width="640" height="587" onload="this.parentElement.classList.replace('loading','loaded')" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=wc-fallback>黄墙红瓦村庄</div>'"></div>
+    </div>
+    <div class="photo-cap" style="margin-top:1.2rem">黑塞水彩真迹 11 幅 — 提契诺 · 蒙塔尼奥拉 · 卢加诺湖</div>
+  </div>
+</section>
+
+
+<!-- ═══ FUN FACTS ═══ -->
+<section class="history-section" id="funfacts" style="padding-top:1rem">
+  <h2>花絮 · 一个人的另一面</h2>
+  <div class="sec-sub">Anekdoten · 不为人知的黑塞</div>
+  <div class="fun-grid">
+    <div class="fun-card">
+      <div class="fun-icon">✉️</div>
+      <div class="fun-title">35,000 封信</div>
+      <div class="fun-body">一生回复了超过三万五千封读者来信。在打字机时代坚持手写——每天清晨四小时，雷打不动。他说："每封回信都是一次小型的灵魂对话。"</div>
+    </div>
+    <div class="fun-card">
+      <div class="fun-icon">🏊</div>
+      <div class="fun-title">每日游泳</div>
+      <div class="fun-body">住在卢加诺湖畔时，每天清晨跳进湖里游泳——从春到秋，不论水温。邻居说他是"湖里最早的人"。他认为冷水是"身体的冥想"。</div>
+    </div>
+    <div class="fun-card">
+      <div class="fun-icon">🏰</div>
+      <div class="fun-title">塔楼书房</div>
+      <div class="fun-body">1920年代住在蒙塔尼奥拉的Cà Camuzzi塔楼——一座16世纪的石塔。书房在塔顶，窗外是阿尔卑斯山和栗子树林。〈荒原狼〉和〈纳尔齐斯与歌尔德蒙〉都在这里写成。</div>
+    </div>
+    <div class="fun-card">
+      <div class="fun-icon">🎸</div>
+      <div class="fun-title">摇滚偶像</div>
+      <div class="fun-body">1960年代美国反文化运动将黑塞奉为精神导师。The Doors、Steppenwolf乐队（以他的小说命名）将他介绍给新一代。一个1887年出生的德语老隐士，成了嬉皮士的圣经作者。</div>
+    </div>
+    <div class="fun-card">
+      <div class="fun-icon">🌿</div>
+      <div class="fun-title">园艺狂人</div>
+      <div class="fun-body">在提契诺亲手打理一座大花园——种玫瑰、番茄、葡萄。园丁是他第三任妻子妮侬之外最重要的日常角色。他曾说："挖土比写小说更真实。"</div>
+    </div>
+    <div class="fun-card">
+      <div class="fun-icon">📚</div>
+      <div class="fun-title">拒读自己的书</div>
+      <div class="fun-body">出版后从不重读自己的作品。有人问他最喜欢哪一部，他回答："下一部——永远只有下一部。"但私下告诉儿子：〈玻璃球游戏〉是他"对这个世界最后的礼物"。</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ CORE VOCABULARY ═══ -->
+<section class="history-section" id="vocabulary" style="padding-top:1rem">
+  <h2>核心词汇 · Schl&uuml;sselbegriffe</h2>
+  <div class="sec-sub">关键词 · 德文对照</div>
+  <div class="history-grid history-grid-wide">
+    <div class="history-card"> <div class="history-era">DER WEG</div> <div class="history-title">道路</div> <div class="history-dates">Der Weg zum Selbst</div> <div class="history-desc">每个人的生命都是一条通往自我（Selbst）的道路。不是外部目标，是内在朝圣。</div> </div>
+    <div class="history-card"> <div class="history-era">DIE SEELE</div> <div class="history-title">灵魂</div> <div class="history-dates">Geist vs. Sinnlichkeit</div> <div class="history-desc">灵魂的完整需要精神与感官的和解——而非偏废。Geist（精神）与 Sinnlichkeit（感官性）的终极统一。</div> </div>
+    <div class="history-card"> <div class="history-era">DIE POLARITAET</div> <div class="history-title">二极性</div> <div class="history-dates">Einheit der Gegensaetze</div> <div class="history-desc">二元对立的消解是黑塞思想的最高追求。纳尔齐斯vs歌尔德蒙——不是二选一，是合一。</div> </div>
+    <div class="history-card"> <div class="history-era">DIE HEIMAT</div> <div class="history-title">故乡</div> <div class="history-dates">Die geistige Heimat</div> <div class="history-desc">黑塞寻找的"故乡"不是地理的，是精神的（die geistige Heimat）。所有主角的共同追寻。</div> </div>
+    <div class="history-card"> <div class="history-era">DIE WANDLUNG</div> <div class="history-title">蜕变</div> <div class="history-dates">Die Haeutung der Seele</div> <div class="history-desc">灵魂的蜕皮（Häutung）。从自我欺骗到自我认识——德米安的"破壳"是最经典的表述。</div> </div>
+    <div class="history-card"> <div class="history-era">DAS SPIEL</div> <div class="history-title">游戏</div> <div class="history-dates">Das Glasperlenspiel</div> <div class="history-desc">万物皆游戏。最高的智慧不是苦修，是游戏（Spiel）。玻璃球游戏是这种精神的终极象征。</div> </div>
+    <div class="history-card"> <div class="history-era">DER FLUSS</div> <div class="history-title">河流</div> <div class="history-dates">Zeit und Ewigkeit</div> <div class="history-desc">悉达多的河流既是时间（万物流逝），又是永恒。倾听河流=倾听存在（das Sein）。</div> </div>
+    <div class="history-card"> <div class="history-era">DAS L&AUML;CHELN</div> <div class="history-title">微笑</div> <div class="history-dates">Das Laecheln des Erleuchteten</div> <div class="history-desc">得道者的标记。不是快乐，是穿透了所有对立之后的平静。</div> </div>
+    <div class="history-card"> <div class="history-era">DIE EINSAMKEIT</div> <div class="history-title">孤独</div> <div class="history-dates">Die Bedingung des Schaffens</div> <div class="history-desc">孤独不是惩罚，是存在的条件（Bedingung des Daseins）。在孤独中，人才能听见灵魂的声音。</div> </div>
+  </div>
+</section>
+
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="site-footer">
+  <div class="closing">「每一个终点都是一个起点，每一个到达都是一次新的出发。」<br>Jeder Ende ist ein Anfang. Jede Ankunft eine neue Heimkehr.</div>
+  <div class="symbol">◇</div>
+  <div style="font-size:.7rem;margin-top:.8rem;color:rgba(160,152,136,.3)">Hermann Hesse · 1877–1962</div>
+</footer>
+
+<!-- ═══ BACK TO TOP ═══ -->
+<button class="back-to-top" id="backToTop" aria-label="回到顶部" title="回到顶部">↑</button>
+
+<!-- ═══ IMAGE LIGHTBOX ═══ -->
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close">×</span>
+  <img src="" alt="" id="lightboxImg">
+</div>
+
+<!-- ═══════ JS ═══════ -->
+<script>
+// ── Scroll-triggered visibility ──
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+    }
+  });
+},{threshold:.15,rootMargin:'0px 0px -80px 0px'});
+
+document.querySelectorAll('.work-card,.life-item,.history-card,.fun-card').forEach(el=>observer.observe(el));
+
+// ── Reading Progress Bar ──
+const progressBar = document.getElementById('readingProgress');
+window.addEventListener('scroll',()=>{
+  const h = document.documentElement;
+  const st = h.scrollTop || document.body.scrollTop;
+  const sh = h.scrollHeight - h.clientHeight;
+  const pct = sh ? (st/sh)*100 : 0;
+  progressBar.style.width = pct + '%';
+},{passive:true});
+
+// ── Back to Top ──
+const backBtn = document.getElementById('backToTop');
+window.addEventListener('scroll',()=>{
+  const st = window.scrollY || document.documentElement.scrollTop;
+  backBtn.classList.toggle('visible', st > 600);
+},{passive:true});
+backBtn.addEventListener('click',()=>{
+  window.scrollTo({top:0,behavior:'smooth'});
+});
+
+// ── Image Lightbox ──
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+document.querySelectorAll('.work-image img, .photo-inset img').forEach(img=>{
+  img.style.cursor = 'pointer';
+  img.addEventListener('click',(e)=>{
+    e.stopPropagation();
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightbox.classList.add('open');
+  });
+});
+lightbox.addEventListener('click',()=>lightbox.classList.remove('open'));
+document.querySelector('.lightbox-close').addEventListener('click',(e)=>{
+  e.stopPropagation();
+  lightbox.classList.remove('open');
+});
+document.addEventListener('keydown',(e)=>{
+  if(e.key==='Escape') lightbox.classList.remove('open');
+});
+
+// ── Section Nav ──
+const sectionNav = document.getElementById('sectionNav');
+const navLinks = sectionNav.querySelectorAll('a[data-section]');
+
+// Match sections to nav items
+const sectionMap = {
+  'lifeTimeline':'lifeTimeline','works':'w01',
+  'history':'history','research':'research','nobel':'nobel',
+  'poetry':'poetry','hesse-east':'hesse-east',
+  'paintings':'paintings'
+};
+
+// Show nav after hero scrolls past
+window.addEventListener('scroll',()=>{
+  const heroH = document.getElementById('hero').offsetHeight;
+  const visible = window.scrollY > heroH * 0.6;
+  sectionNav.classList.toggle('visible', visible);
+
+  // Track active section
+  let current = 'lifeTimeline';
+  const secs = ['lifeTimeline','w01','history','research','nobel','poetry','hesse-east','paintings','funfacts','vocabulary'];
+  for(const id of secs){
+    const el = document.getElementById(id);
+    if(!el) continue;
+    if(el.getBoundingClientRect().top <= window.innerHeight/2) current = id;
+  }
+
+  // Map back to nav section
+  let activeSection = current;
+  if(['w01','w02','w03','w04','w05','w06','w07','w08','w09','w10','w11'].includes(current)) activeSection = 'works';
+  if(['funfacts','vocabulary'].includes(current)) activeSection = current;
+
+  navLinks.forEach(a=>{
+    const sec = a.dataset.section;
+    if(sec === 'works' && ['w01','w02','w03','w04','w05','w06','w07','w08','w09','w10','w11'].includes(current)){
+      a.classList.add('active');
+    } else {
+      a.classList.toggle('active', sec === activeSection);
+    }
+  });
+},{passive:true});
+
+// Dropdown toggle
+const navMore = document.getElementById('navMore');
+const dropdownBtn = navMore.querySelector('.nav-dropdown-btn');
+dropdownBtn.addEventListener('click',(e)=>{
+  e.stopPropagation();
+  navMore.classList.toggle('open');
+});
+document.addEventListener('click',()=>navMore.classList.remove('open'));
+
+// ── Life Timeline: clickable nodes → jump to work ──
+const lifeToWork = {
+  '1904':'w01','1906':'w02','1910':'w03','1914':'w04',
+  '1919':'w05','1920':'w06','1922':'w07','1927':'w08',
+  '1930':'w09','1932':'w10','1943':'w11'
+};
+document.querySelectorAll('.life-item').forEach(item=>{
+  const yearEl = item.querySelector('.life-year');
+  if(!yearEl) return;
+  const year = yearEl.textContent.trim();
+  const workId = lifeToWork[year];
+  if(workId){
+    item.style.cursor = 'pointer';
+    item.title = '点击跳转到对应作品';
+    item.addEventListener('click',()=>{
+      const target = document.getElementById(workId);
+      if(target) target.scrollIntoView({behavior:'smooth',block:'center'});
+    });
+  }
+});
+
+// ── Smooth image load ──
+document.querySelectorAll('.work-image img').forEach(img=>{
+  if(img.complete && img.naturalWidth > 0){
+    img.parentElement.classList.replace('loading','loaded');
+  }
+});
+</script>
+</body>
+</html>
